@@ -6,7 +6,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 app = Flask(__name__)
 
 # Configure PostgreSQL database URI
-
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy with the Flask app
 db.init_app(app)
