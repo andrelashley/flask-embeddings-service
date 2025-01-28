@@ -1,0 +1,41 @@
+# IDE-specific files
+.idea/
+.vscode/
+
+# Virtual environments
+.venv*/
+venv*/
+
+# Python cache files
+__pycache__/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Coverage and testing
+.coverage*
+htmlcov/
+.tox/
+
+# Documentation build
+docs/_build/
+
+# Large or temporary files
+*.log
+*.tmp
+
+# Model files
+model/
+models/
+saved_model/
+*.bin
+*.h5
+*.pth
+*.onnx
+
+# Hugging Face transformers cache
+.cache/
+transformers_cache/
+sentence_transformers_cache/
